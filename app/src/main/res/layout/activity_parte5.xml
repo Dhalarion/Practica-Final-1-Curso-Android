@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Parte5Activity">
+
+    <Button
+        android:id="@+id/btn_Guardar"
+        android:layout_width="125dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="60dp"
+        android:text="Guardar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lstvReservas" />
+
+    <Button
+        android:id="@+id/btn_Borrar"
+        android:layout_width="125dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="Borrar"
+        app:layout_constraintStart_toEndOf="@+id/btn_Guardar"
+        app:layout_constraintTop_toBottomOf="@+id/lstvReservas" />
+
+    <Button
+        android:id="@+id/btn_Parte54"
+        android:layout_width="125dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="200dp"
+        android:text="Parte 4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lstvReservas" />
+
+    <Spinner
+        android:id="@+id/spnDiaSemana"
+        android:layout_width="247dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="81dp"
+        android:contentDescription="Elija dia de la reserva"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnLugar"
+        android:layout_width="247dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="70dp"
+        android:contentDescription="Elija el lugar de la reserva"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnDiaSemana" />
+
+    <ListView
+        android:id="@+id/lstvReservas"
+        android:layout_width="284dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnLugar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
